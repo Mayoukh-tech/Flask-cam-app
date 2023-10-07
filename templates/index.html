@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>IotDrone</title>
+    <!-- <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/static/css/style.css" />
+    <link rel="stylesheet" href="/static/fonts/css/all.min.css">
+
+    <script src="/static/js/jquery-3.6.1.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/func.js"></script>
+</head>
+
+<body id="body">
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="Logo" id="header">
+                            <img src="/static/images/logo2.png" height=50 alt="">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <nav class="navbar navbar-expand-sm">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#aboutus">About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#contact">Contact</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#video">Video</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="icons col-md-3">
+                        <ul class="list-inline">
+                            <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
+                            <li><a href=""><i class="fa-brands fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Background Image start -->
+    <section id="background">
+        <div class="sizing">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 offset-2">
+                        <div class="row heading1">Smart Quadcopter</div>
+                    </div>
+                    <div class="col-md-10 offset-2">
+                        <div class="row body1">Because using helicopters to inspect infrastructure is time-consuming and
+                            expensive</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Background Image end -->
+
+    <!-- Introduction -->
+    <section>
+        <div class="box"></div>
+    </section>
+    <!-- introduction end -->
+
+    <!-- Video Section -->
+    <section id="video">
+        <div class="container">
+            <div class="row">
+                <div class="text">
+                    <h1>Live Video</h1>
+                </div>
+                <div class="video col-md-12 ">
+                    <img src="{{url_for('vid_ft')}}" width="100%">
+                    <!-- <iframe controls src="https://www.youtube.com/embed/83RUhxsfLWs"></iframe> -->
+                </div>
+                <!-- <div class="content col-md-4"></div> -->
+            </div>
+        </div>
+    </section>
+    <!-- Video section end -->
+
+    <!-- Slideshow container -->
+    <section id="slides">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="slideshow-container">
+                        <div class="text">
+                            <h1>Components</h1>
+                        </div>
+                        <div class="mySlides">
+                            <img src="/static/images/bldc.jpg" style="width:100%">
+                            <div class="text">A Brushless DC Electric Motor (BLDC) is an electric motor powered by a
+                                direct current voltage supply and commutated electronically instead of by brushes like
+                                in conventional DC motors. BLDC motors are more popular than the conventional DC motors
+                                nowadays, but the development of these type of motors has only been possible since the
+                                1960s when semiconductor electronics were developed.</div>
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="/static/images/esc.jpg" style="width:100%">
+                            <div class="text">An Electronic Speed Controller (ESC) is a purpose-built device designed
+                                for controlling the speed of an electric motor. Using a specialised combination of
+                                hardware and firmware, ESCs drive motors to a commanded speed. They maintain motor speed
+                                under various circumstances, such as the dynamic load of a propeller.</div>
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="/static/images/NodeMCU.jpg" style="width:100%">
+                            <div class="text">NodeMCU is an open source development board and firmware based in the
+                                widely used ESP8266 -12E WiFi module. It allows you to program the ESP8266 WiFi module
+                                with the simple and powerful LUA programming language or Arduino IDE. With its USB-TTL ,
+                                the nodeMCU Dev board supports directly flashing from USB port. It combines features of
+                                WIFI accesspoint and station + microcontroller. These features make the NodeMCU extremly
+                                powerful tool for Wifi networking. It can be used as access point and/or station, host a
+                                webserver or connect to internet to fetch or upload data.</div>
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="/static/images/mpu6050.jpg" style="width:100%">
+                            <div class="text">The MPU-6050 is the world’s first and only 6-axis motion tracking devices
+                                designed for the low power, low cost, and high performance requirements of smartphones,
+                                tablets and wearable sensors. MPU6050 is a Micro Electro-mechanical system (MEMS), it
+                                consists of three-axis accelerometer and three-axis gyroscope. It helps us to measure
+                                velocity, orientation, acceleration, displacement and other motion like features.</div>
+                        </div>
+
+                        <div class="mySlides">
+                            <img src="/static/images/dji frame.jpg" style="width:100%">
+                            <div class="text">Frame Arms made from ultra-strength material and design to provide better
+                                crash worthiness. Frame Weight: 282g; Diagonal Wheelbase: 450mm; Take-off Weight: 800g ~
+                                1200g. A high strength compound PCB frame board which makes ESCs and wiring easier and
+                                safer. Optimized frame design with abundant assembly space for autopilot systems and
+                                other DJI gadgets. </div>
+                        </div>
+
+                        <a class="prev" onclick="plusSlides(-1)">❮</a>
+                        <a class="next" onclick="plusSlides(1)">❯</a>
+
+                    </div>
+                    <br>
+
+                    <div style="text-align:center">
+                        <span class="dot" onclick="currentSlide(1)"></span>
+                        <span class="dot" onclick="currentSlide(2)"></span>
+                        <span class="dot" onclick="currentSlide(3)"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+        </script>
+
+    </section>
+    <!-- Slideshow container end-->
+    <section id="about1">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 align">
+                    <h1>Our Team</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 align">
+                    <img src="/static/images/PG1.jpg" alt="our profile" style="width:100%" class="image">
+                    <p>Puja Gorai</p>
+                    <p>Backend Developer</p>
+                </div>
+                <div class="col-md-3 align">
+                    <img src="/static/images/MM1.jpg" alt="our profile" style="width:100%" class="image">
+                    <p>Mayoukh Modak</p>
+                    <p>Software Developer</p>
+                </div>
+                <div class="col-md-3 align">
+                    <img src="/static/images/1.jpg" alt="our profile" style="width:100%" class="image">
+                    <p>Arunabha Dey</p>
+                    <p>Frontend Developer</p>
+                </div>
+
+                <div class="col-md-3 align">
+                    <img src="/static/images/AN1.jpg" alt="our profile" style="width:100%" class="image">
+                    <p>Abhijit Nandi</p>
+                    <p>Frontend Developer</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-6" id="aboutus">
+                    <h2 class="myDIV">About Us</h2>
+                    <div class="hide">
+                        <p style="text-align:left;">We are a student of Bachelors of Computer Application studying in 5th
+                            Semester and together made an IoT based Smart Quadcopter used for search and
+                            rescue, surveillance, traffic monitoring, weather monitoring, firefighting, personal
+                            use, drone-based photography, videography, agriculture, delivery services.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-2 offset-md-4" id="contact">
+                    <h2>
+                        Contacts
+                    </h2>
+                    <ul>
+                        <li><a href="mailto: goraip2020@gmail.com?subject = Feedback&body = Message"">Send Mail</a></li>
+                        <li><a href="tel:+919735797832">+91 97357 97832</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
